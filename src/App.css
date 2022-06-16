@@ -63,22 +63,29 @@
   float :left;
   padding-right: 5px;
   padding-left: 5px;
+  font-family: sans-serif;
+  font-weight: 900;
 }
 .RedBar .sns a{
   color : white;
   text-decoration: none;  
-  font-weight: 'notokr-bold';
 }
+
+
 
 .RedBar .shoes a{
   color : white;
   text-decoration: none;  
 }
+
+
 .RedBar .shoes li{
   list-style: none;
   float :right;
   padding-right: 5px;
   padding-left: 5px;
+  font-family: sans-serif;
+  font-weight: 900;
 }
 
 body {
@@ -87,4 +94,9 @@ body {
 
 .RedBar .sns li a i{
   padding-right : 4px; 
+}
+
+.sns > li > a:hover,
+.shoes > li > a:hover {
+  color: #FFD008;
 }

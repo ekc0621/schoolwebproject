@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+.yellowbar{
+  width: 74.21875%;
+  background-color: #ffdd00;
+  height: 60px;
+  padding-left:13%;
+  padding-right: 13%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.yellowbar > .ABC_logo{
+  font-size: 45px;
+  font-weight: 500;
+  font-family: fantasy;
+  color : red;
+  padding:3px 15px 15px 15px ;
+}
+
