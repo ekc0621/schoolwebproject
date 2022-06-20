@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+ul li ol {
+  list-style: none;
+}
+
 .yellowbar{
   width: 74.21875%;
   background-color: #ffdd00;
@@ -20,11 +24,28 @@ code {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.yellowbar > .ABC_logo{
+.yellowbar >.main-menu> .ABC_logo{
   font-size: 45px;
   font-weight: 500;
   font-family: fantasy;
   color : red;
   padding:3px 15px 15px 15px ;
+  width:400px;
+  margin-right:0;
+  
+}
+
+.yellowbar>.main-menu>.drop-down>ul,ol,li{
+  list-style: none;
+  float: right;
+  
+}
+.yellowbar > .main-menu>.drop_down{
+  display:inline-block;
+}
+.yellowbar > .main-menu>.drop_down
+{
+  float: right;
+  list-style: none;
 }
 
