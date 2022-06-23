@@ -51,6 +51,7 @@ ul li ol {
   color:#ff6e00;
   font-weight: bold;
 }
+
 .yellowbar>.main-menu>.drop>li:hover.sub{
   float: right;
   /* border: 1px solid red;   */
@@ -59,7 +60,7 @@ ul li ol {
   color:red;
   font-weight: bold;
 }
-.yellowbar>.main-menu>ul.drop>li.sub>ul:hover.sup_sub,ul:hover.stor_sub,ul:hover.med_sub,ul:hover.com_sub{
+.yellowbar>.main-menu>ul.drop>li.sub>ul:hover .sup_sub,ul:hover .stor_sub,ul:hover .med_sub,ul:hover .com_sub{
   
   opacity: 1;
   visibility: visible;
