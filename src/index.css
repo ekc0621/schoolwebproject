@@ -18,10 +18,10 @@ ul li ol {
 .yellowbar{
   width: 74.21875%;
   background-color: #ffdd00;
-  height: 60px;
+  height: 70px;
   padding-left:13%;
   padding-right: 13%;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding-bottom: 10px;
 }
 .yellowbar >.main-menu> .ABC_logo{
@@ -31,21 +31,62 @@ ul li ol {
   color : red;
   padding:3px 15px 15px 15px ;
   width:400px;
-  margin-right:0;
+  margin:10px 0px 0px 0px;
   
 }
 
-.yellowbar>.main-menu>.drop-down>ul,ol,li{
+.yellowbar>.main-menu>.drop{
   list-style: none;
-  float: right;
-  
-}
-.yellowbar > .main-menu>.drop_down{
-  display:inline-block;
-}
-.yellowbar > .main-menu>.drop_down
-{
-  float: right;
-  list-style: none;
+  list-style-type: none;
+  /* padding-bottom: 10px; */
+  padding-left: 240px;
+  margin-top:0 ;
 }
 
+.yellowbar>.main-menu>.drop>li.sub{
+  float: right;
+  /* border: 1px solid red;   */
+  padding: 30px 15px 27px 15px;
+  text-align: center;
+  color:#ff6e00;
+  font-weight: bold;
+}
+.yellowbar>.main-menu>.drop>li:hover.sub{
+  float: right;
+  /* border: 1px solid red;   */
+  padding: 30px 15px 27px 15px;
+  text-align: center;
+  color:red;
+  font-weight: bold;
+}
+.yellowbar>.main-menu>ul.drop>li.sub>ul:hover.sup_sub,ul:hover.stor_sub,ul:hover.med_sub,ul:hover.com_sub{
+  
+  opacity: 1;
+  visibility: visible;
+  
+} 
+
+.yellowbar>.main-menu>ul.drop>li.sub>ul.sup_sub,ul.stor_sub,ul.med_sub,ul.com_sub{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  
+}
+
+/* .yellowbar>.main-menu>ul.drop>li.sub>ul.sup_sub,ul.stor_sub,ul.med_sub,ul.com_sub{
+  text-decoration: none;  
+} */
+.yellowbar>.main-menu>ul.drop>li.sub>a{
+  text-decoration: none;  
+  color: #ff6e00;
+}
+.yellowbar>.main-menu>ul.drop>li.sub>a:hover{
+  text-decoration: none;  
+  color: red;
+
+}
+
+
+.yellowbar > .main-menu{
+  display: inline-flex;
+}

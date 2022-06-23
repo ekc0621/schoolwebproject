@@ -4,15 +4,15 @@ export default function yellowbar(){
     return(
         <div className = "yellowbar">
             <div className="main-menu">
-                <div className="ABC_logo">
+                <h1 className="ABC_logo">
                     ABC-MART
-                </div>
-                <div className="drop_down">                
-                    <ul>
-                        <li>
-                            <a href="https://abcmartkorea.saramin.co.kr/main/index">RECRUIT</a>
+                </h1>
+                {/* <div className="drop_down">                 */}
+                    <ul className="drop">
+                        <li className = "sub">
+                            <a href="https://abcmartkorea.saramin.co.kr/main/index" className="rec">RECRUIT</a>
                         </li>
-                        <li>
+                        <li className = "sub">
                             SUPPORT
                             <ul className="sup_sub">
                                 <li>
@@ -26,9 +26,9 @@ export default function yellowbar(){
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li className = "sub">
                             STORE
-                            <ul className="sto-sup">
+                            <ul className="stor_sub">
                                 <li>
                                     <a href="http://www.abcmartkorea.com/%ea%b4%91%ea%b3%a0/">광고</a>
                                 </li>
@@ -37,9 +37,9 @@ export default function yellowbar(){
                                 </li>
                             </ul>
                         </li>
-                        <li>                            
+                        <li className = "sub">                            
                             MEDIA
-                            <ul className="med-sup">
+                            <ul className="med_sub">
                                 <li>
                                     <a href="http://www.abcmartkorea.com/%eb%a7%a4%ec%9e%a5%ec%a0%95%eb%b3%b4/">매장정보</a>
                                 </li>
@@ -48,7 +48,7 @@ export default function yellowbar(){
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li className = "sub">
                             COMPANY
                             <ul className="com_sub">
                                 <li>
@@ -69,7 +69,7 @@ export default function yellowbar(){
                             </ul>
                         </li>
                     </ul>
-                </div>
+                {/* </div> */}
             </div>
         </div>
     )
