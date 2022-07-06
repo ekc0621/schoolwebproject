@@ -1,18 +1,5 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-ul li ol {
-  list-style: none;
+*{
+  text-decoration: none;
 }
 
 .yellowbar{
@@ -21,72 +8,98 @@ ul li ol {
   height: 70px;
   padding-left:13%;
   padding-right: 13%;
-  /* padding-top: 10px; */
   padding-bottom: 10px;
+  margin-top: 0px;
 }
+
 .yellowbar >.main-menu> .ABC_logo{
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 500;
   font-family: fantasy;
+  /* width: 40%; */
   color : red;
   padding:3px 15px 15px 15px ;
-  width:400px;
+  /* width:400px; */
   margin:10px 0px 0px 0px;
   
 }
 
-.yellowbar>.main-menu>.drop{
+.yellowbar>.main-menu>.drop_down{
   list-style: none;
   list-style-type: none;
-  /* padding-bottom: 10px; */
-  padding-left: 240px;
+  padding-left: 454px;
+  
   margin-top:0 ;
+  margin-bottom:0 ;
 }
 
-.yellowbar>.main-menu>.drop>li.sub{
+.yellowbar>.main-menu>.drop_down>li.sub{
   float: right;
-  /* border: 1px solid red;   */
   padding: 30px 15px 27px 15px;
+  /* height: 98.6px; */
   text-align: center;
   color:#ff6e00;
   font-weight: bold;
 }
-
-.yellowbar>.main-menu>.drop>li:hover.sub{
+.yellowbar>.main-menu>.drop_down>li.sub>a{
   float: right;
-  /* border: 1px solid red;   */
+  /* padding: 30px 15px 27px 15px; */
+  text-align: center;
+  color:#ff6e00;
+  font-weight: bold;
+  text-decoration: none;
+
+  
+}
+.yellowbar>.main-menu>.drop_down>li.sub>a:hover{
+  float: right;
+  /* padding: 30px 15px 27px 15px; */
+  text-align: center;
+  color:red;
+  text-decoration: none;
+  font-weight: bold;
+} 
+
+.yellowbar>.main-menu>.drop_down>li:hover.sub{
+  float: right;
   padding: 30px 15px 27px 15px;
   text-align: center;
   color:red;
   font-weight: bold;
-}
-.yellowbar>.main-menu>ul.drop>li.sub>ul:hover .sup_sub,ul:hover .stor_sub,ul:hover .med_sub,ul:hover .com_sub{
-  
-  opacity: 1;
-  visibility: visible;
-  
 } 
 
-.yellowbar>.main-menu>ul.drop>li.sub>ul.sup_sub,ul.stor_sub,ul.med_sub,ul.com_sub{
+.yellowbar>.main-menu>ul.drop_down>li ul.sub_menu{
+  display: none;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0px;
   position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  
+  margin-top: 27px;
+}
+.yellowbar>.main-menu>ul.drop_down>li ul :hover .sub_menu {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0px;
+  position: absolute;
+  margin-top: 27px;
+  text-align: center;
+  background-color: #ffdd00;
 }
 
-/* .yellowbar>.main-menu>ul.drop>li.sub>ul.sup_sub,ul.stor_sub,ul.med_sub,ul.com_sub{
-  text-decoration: none;  
-} */
-.yellowbar>.main-menu>ul.drop>li.sub>a{
-  text-decoration: none;  
-  color: #ff6e00;
-}
-.yellowbar>.main-menu>ul.drop>li.sub>a:hover{
-  text-decoration: none;  
-  color: red;
-
+.yellowbar>.main-menu>ul.drop_down>li ul .sub_menu >li {
+  display: inline-block;
 }
 
+.yellowbar>.main-menu>ul.drop_down>li ul .sub_menu >li :hover{
+  background: #fff;
+}
+
+.yellowbar>.main-menu>ul.drop_down>li ul.sub_menu>li>a{
+  color:#777;
+  font-weight: 400;
+  font-size: 14px;
+}
 
 .yellowbar > .main-menu{
   display: inline-flex;
